@@ -1,0 +1,207 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  	font-weight: bold;
+  	scroll-behavior: smooth;
+}
+body{
+	background-image: url(img/body.jpg);
+	width: 100%;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 2%;
+	background:url(img/fon1.jpg);
+	/*background-size: cover;*/
+}
+/*header*/
+header{
+	display: flex;
+	justify-content: space-between;
+}
+header img{
+	width: 40%;
+}
+nav{
+	padding: 2%;
+	border-bottom: 4px solid black;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.about p{
+	font-size: 20px;
+}
+nav a{
+	height: 35px;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+
+}
+nav a:hover{
+	height: 31px;
+	border-bottom: 4px solid #593408;
+	color: #593408;
+	text-decoration: none;
+	font-size: 25px;
+}
+/*main*/
+.about{
+	width: 55%;
+}
+.about h1{
+	font-size: 40px; 
+}
+.polit{
+	padding: 2%;
+	margin: 0 auto;
+}
+.polit h1, .poet h1{
+	text-align: center;
+	font-size: 40px; 
+
+}
+.ph{
+	width: 20%;
+	float:right;
+	margin-left: 5%;
+}
+li{
+	font-size:19px;
+}
+.name_pom{
+	font-weight: bold;
+	font-size: 24px
+}
+.photo_p{
+	width: 50%;
+}
+.left{
+	margin-top: 20px;
+	width: 75%;
+}
+.left p, .right p{
+	margin-bottom: 15px;
+	font-size: 19px;
+
+}
+.right{
+	margin-left: 25%;
+	width: 75%;
+	margin-top: 20px;
+	text-align: right;
+}
+.sp{
+	display: flex;
+	justify-content: space-between;
+	width: 86%;
+	padding: 7%;
+}
+.foto{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.bonus{
+	margin-top: 20px;
+	color: #535353;
+	font-style: italic;
+	font-size: 22px;
+}
+h2{
+	font-size: 31px;
+	margin-bottom: 15px;	
+}
+footer{
+	padding-top:40px;
+	border-top: 4px solid black;
+}
+@media(min-width: 768px) and (max-width: 1023px){
+	nav a{
+	padding: 1%;
+	margin: 0 1% 0 1%;
+
+}
+	header{
+		display: block;
+	}
+	nav{
+		flex-wrap: wrap;
+	}
+	header img{
+		float:left;
+		width: 40%;
+		height: 500px;
+		margin-right: 1.5%;
+	}
+	.about{
+		width:100%;
+	}
+	.left{
+		width: 90%;
+	}
+	.right{
+		width: 90%;
+		margin-left: 10%;
+	}
+	.foto img{
+		width: 100%;
+		height: 500px;
+	}
+	.ph{
+		width: 40%;
+	}
+	.sp{
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 767px){
+	nav{
+		flex-wrap: wrap;
+	}
+	header{
+		display: block;
+	}
+	header img{
+		float:left;
+		width: 100%;
+		height: 800px;
+	}
+	.about{
+		width:100%;
+		text-align: center;		
+	}
+	.about h1{
+		margin: 20px;
+	}
+	.foto img{
+		width: 100%;
+		height: 500px;
+	}
+	.left{
+		width: 95%;
+	}
+	.right{
+		width: 95%;
+		margin-left: 5%;
+	}
+	.ph{
+		width: 40%;
+	}
+	.sp{
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 7% 20px 7% ;
+	}
+	h2{
+		font-size: 31px;
+		margin: 15px 0 15px 0;	
+	}
+}
